@@ -22,54 +22,71 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="images/logo2.png" alt="Logo">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo2.png" alt="Logo">
+        </a>
+      </div>
+      <a href="#" onclick="toggleNav()" class="icon">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </a>
-    </div>
-    <div class="topnav" id="myTopnav">
-      <a href="index.html">Home</a>
+      <a href="#about">About Me</a>
       <a href="projects.html">Projects</a>
       <a href="index.html#certifications">Certifications</a>
       <a href="index.html#contact">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
     </div>
-  </header>  
-  <h1 class ="Projectheading">Projects</h1><br><br>
-  <ul class="bxslider">
-    <li>
-      <img src="images/projects/django.jpg" alt="Driving Test Website" />
-      <div class="project-info">
-        <h3>Driving Test Website using Django and Python</h3>
-        <p>The Driving Test Website is a Django and Python-based platform for testing driving knowledge. It offers interactive features, instant feedback, and secure user registration</p>
-      </div>
-    </li>
-    <li>
-      <img src="images/projects/java.jpg" alt="Property Management System" />
-      <div class="project-info">
-        <h3>Property Management System using Java</h3>
-        <p>The Property Management System is a Java-based application designed for realtors and users. It offers comprehensive features for efficient property management, including property listing, search, 
-          and seamless database connectivity</p>
-      </div>
-    </li>
-    <li>
-      <img src="images/projects/dpds1.jpg" alt="Third Project" />
-      <div class="project-info">
-        <h3>Data Poison Detection Schemes Using Distributed Machiene Learning</h3>
-        <p>Python program leveraging machine learning algorithms to detect and prevent data poisoning attacks, utilizing Pandas and NumPy libraries for data analysis and manipulation</p>
-      </div>
-    </li>
-    <li>
-      <img src="images/projects/ccd.png" alt="Third Project" />
-      <div class="project-info">
-        <h3>Credit Card Fraud Detection using Machiene Learning</h3>
-        <p>Python program detects and compares fraudulent transactions with 95% accuracy, analyzing patterns to identify potential fraud</p>
-      </div>
-    </li>
-  </ul>
-</main>
+    
+   <!-- Side menu -->
+<div id="mySidenav" class="sidenav">
+  <a href="#" class="closebtn" onclick="toggleNav()">&times;</a>
+  <a href="#about" onclick="closeNav()">About Me</a>
+  <a href="projects.html" onclick="closeNav()">Projects</a>
+  <a href="index.html#certifications" onclick="closeNav()">Certifications</a>
+  <a href="index.html#contact" onclick="closeNav()">Contact</a>
+</div>
+
+  </header>
+  <div class="content-wrapper" id="contentWrapper">
+  <main>
+    <h1 class ="Projectheading">Projects</h1><br><br>
+    <ul class="bxslider">
+      <li>
+        <img src="images/projects/django.jpg" alt="Driving Test Website" />
+        <div class="project-info">
+          <h3>Driving Test Website using Django and Python</h3>
+          <p>The Driving Test Website is a Django and Python-based platform for testing driving knowledge. It offers interactive features, instant feedback, and secure user registration</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/projects/java.jpg" alt="Property Management System" />
+        <div class="project-info">
+          <h3>Property Management System using Java</h3>
+          <p>The Property Management System is a Java-based application designed for realtors and users. It offers comprehensive features for efficient property management, including property listing, search, 
+            and seamless database connectivity</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/projects/dpds1.jpg" alt="Third Project" />
+        <div class="project-info">
+          <h3>Data Poison Detection Schemes Using Distributed Machiene Learning</h3>
+          <p>Python program leveraging machine learning algorithms to detect and prevent data poisoning attacks, utilizing Pandas and NumPy libraries for data analysis and manipulation</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/projects/ccd.png" alt="Third Project" />
+        <div class="project-info">
+          <h3>Credit Card Fraud Detection using Machiene Learning</h3>
+          <p>Python program detects and compares fraudulent transactions with 95% accuracy, analyzing patterns to identify potential fraud</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </main>
 
 
   

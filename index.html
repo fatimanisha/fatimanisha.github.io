@@ -6,6 +6,7 @@
   <link rel="icon" href="images/logo2.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
@@ -18,21 +19,36 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="images/logo2.png" alt="Logo">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo2.png" alt="Logo">
+        </a>
+      </div>
+      <a href="#" onclick="toggleNav()" class="icon">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </a>
-    </div>
-    <div class="topnav" id="myTopnav">
       <a href="#about">About Me</a>
       <a href="projects.html">Projects</a>
       <a href="index.html#certifications">Certifications</a>
       <a href="index.html#contact">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
     </div>
-  </header>  
+    
+   <!-- Side menu -->
+<div id="mySidenav" class="sidenav">
+  <a href="#" class="closebtn" onclick="toggleNav()">&times;</a>
+  <a href="#about" onclick="closeNav()">About Me</a>
+  <a href="projects.html" onclick="closeNav()">Projects</a>
+  <a href="index.html#certifications" onclick="closeNav()">Certifications</a>
+  <a href="index.html#contact" onclick="closeNav()">Contact</a>
+</div>
+
+  </header>
+  
   <main>   
     <section class="intro-section" id="about">
       <div class="intro-content">
@@ -64,7 +80,7 @@
         </div>                          
       </div>
       <aside class="intro-image">
-        <img src="images/intro.jpg" alt="Profile Image">
+        <img src="images/intro1.jpg" alt="Profile Image">
       </aside>
     </section>
     

@@ -6,6 +6,23 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+  function toggleNav() {
+    var sidenav = document.getElementById("mySidenav");
+    if (sidenav.style.width === "250px") {
+      sidenav.style.width = "0";
+    } else {
+      sidenav.style.width = "250px";
+    }
+  }
+
+  function closeNav() {
+    var sidenav = document.getElementById("mySidenav");
+    sidenav.style.width = "0";
+  }
+
+
+
+
 
 function fadeCardsIn() {
   const cards = document.querySelectorAll('.achievements-section .card');
@@ -121,7 +138,3 @@ document.addEventListener('DOMContentLoaded', function () {
   fadeInElements();
     
     //project section
-
-    $(document).ready(function(){
-      $('.bxslider').bxSlider();
-    });
