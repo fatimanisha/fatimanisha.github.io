@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fatima Nisha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/logo2.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script> 
+  <script>
+     $(document).ready(function(){
+      $('.bxslider').bxSlider();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo2.png" alt="Logo">
+        </a>
+      </div>
+      <a href="#" onclick="toggleNav()" class="icon">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+      <a href="#about">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#certifications">Certifications</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    
+   <!-- Side menu -->
+<div id="mySidenav" class="sidenav">
+  <a href="#" class="closebtn" onclick="toggleNav()">&times;</a>
+  <a href="#about" onclick="closeNav()">About Me</a>
+  <a href="projects.html" onclick="closeNav()">Projects</a>
+  <a href="index.html#certifications" onclick="closeNav()">Certifications</a>
+  <a href="index.html#contact" onclick="closeNav()">Contact</a>
+</div>
+
+  </header>
+  <div class="content-wrapper" id="contentWrapper">
+  <main>
+    <h1 class ="Projectheading">Projects</h1><br><br>
+    <ul class="bxslider">
+      <li>
+        <img src="images/projects/django.jpg" alt="Driving Test Website" />
+        <div class="project-info">
+          <h3>Driving Test Website using Django and Python</h3>
+          <p>The Driving Test Website is a Django and Python-based platform for testing driving knowledge. It offers interactive features, instant feedback, and secure user registration</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/projects/java.jpg" alt="Property Management System" />
+        <div class="project-info">
+          <h3>Property Management System using Java</h3>
+          <p>The Property Management System is a Java-based application designed for realtors and users. It offers comprehensive features for efficient property management, including property listing, search, 
+            and seamless database connectivity</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/projects/dpds1.jpg" alt="Third Project" />
+        <div class="project-info">
+          <h3>Data Poison Detection Schemes Using Distributed Machiene Learning</h3>
+          <p>Python program leveraging machine learning algorithms to detect and prevent data poisoning attacks, utilizing Pandas and NumPy libraries for data analysis and manipulation</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/projects/ccd.png" alt="Third Project" />
+        <div class="project-info">
+          <h3>Credit Card Fraud Detection using Machiene Learning</h3>
+          <p>Python program detects and compares fraudulent transactions with 95% accuracy, analyzing patterns to identify potential fraud</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </main>
+
+
+  
+  <footer>
+    <div class="social-icons">
+      <div class = "text" >Get in Touch</div><br>
+      <a href="mailto:fatimanisha1799@gmail.com" class="link bigger">fatimanisha1799@gmail.com</a><br><br>
+      <a  href="https://www.linkedin.com/in/fatima-nisha-677ba6255/"><img src="images/socialmedia/linkedin.jpg" class="icon-style"></a> &nbsp
+        <a  href="https://www.facebook.com/nishafatima99"><img src="images/socialmedia/facebook.jpg" class="icon-style"></a> &nbsp
+              <a  href="https://www.instagram.com/nishafatima__/"><img src="images/socialmedia/instagram.jpg" class="icon-style"></a> &nbsp
+              <a  href="https://twitter.com/nishaafatima"><img src="images/socialmedia/twitter.jpg" class="icon-style"></a>
+    </div><br><Br>
+  <p>&copy; 2023 Fatima Nisha. All rights reserved.</p>
+</footer>
+</body>
+</html>
