@@ -282,7 +282,75 @@ html, body, header, nav, ul, li, p {
       padding: 10px;
     }
   }
+  /** Experience Section */
   
+  .experience-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: sweet-sans-pro, sans-serif; 
+}
+
+.experience-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: auto;
+    float:left;
+}
+
+.experience-card:hover {
+  opacity: 0.8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+.experience-item {
+    font-family: sweet-sans-pro, sans-serif; 
+    margin-top: 20px;
+}
+
+.experience-card h3{
+  font-size: 24px;
+  font-weight: 700;
+
+}
+.experience-item h4 {
+  font-size: 20px;
+  font-weight: 700;
+    color: #000000;
+}
+
+.experience-item p {
+    color: #666;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #444;
+}
+
+.experience-item li {
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        padding: 15px;
+    }
+    
+    .experience-item {
+        margin-top: 15px;
+    }
+}
+
 /**Achievements Section Styles **/
 
 .achievements-section .section-container {
